@@ -1,0 +1,56 @@
+/* Relevant Styles */
+.nav_fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #911146;
+  width: 100%;
+  color: #fff;
+}
+
+ .nav_fixed__desktop-tabs{
+    display: none;
+  }
+
+
+@media screen and (min-width: 750px){
+  .nav_fixed__desktop-tabs{
+    display: block;
+  }
+
+  .nav_fixed__mobile-icons{
+    display: none;
+  }
+}
+
+/* END */
+
+
+/* ...(setup; ignore)... */
+*{ box-sizing:border-box;}
+body{ margin:0; font-family: "Helvetica Neue";}
+header{
+  text-align: center;
+  padding-top: 80px;
+  font-weight: 200;
+  color: #aaa;
+  height: 100vh;
+  background-image: url('https://unsplash.it/1200/800?image=302');
+  background-size: cover;
+}
+h3{font-weight: 200;}
+
+.nav__icon{
+  font-size: 30px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav__tab{
+  display: inline-block;
+  padding: 20px;
+  border-right: 1px solid #fff;
+  margin-left: -2px;
+}
+
+/* Your Code here... */

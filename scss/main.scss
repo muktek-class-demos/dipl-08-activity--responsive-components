@@ -1,0 +1,13 @@
+@import "./imports/_normalize.scss";
+
+$tablet: 768px;
+$laptop: 1024px;
+
+*{ box-sizing: border-box }
+
+img {
+   width: 100%;
+   display: block;
+}
+
+@import "./modules/_ex-00.scss";

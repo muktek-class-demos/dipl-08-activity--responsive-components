@@ -1,0 +1,14 @@
+$tablet: 768px;
+
+.demo-0__header{
+  font-size: 24px;
+
+  @media screen and (min-width: $tablet){
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: $laptop){
+    font-size: 42px;
+  }
+
+}
