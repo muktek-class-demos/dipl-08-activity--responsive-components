@@ -1,4 +1,50 @@
 .demo-01-inner-container{
   max-width: 800px;
   margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+
+.ui-card{
+  // max-width: 550px;
+  margin: 10px auto;
+  border: 1px solid #333;
+  padding: 10px;
+
+  /* mobile styles */
+  width: 100%;
+
+  @media screen and (min-width: 500px){
+    /*
+      width 1% less that 25%,
+      with justify-content: space-btw on flex container
+    */
+    width: calc(25% - 10px);
+  }
+
+  @media screen and (min-width: 750px){
+    /*
+      width 1% less that 25%,
+      with justify-content: space-btw on flex container
+    */
+    width: calc(16.666% - 10px);
+  }
+
+}
+
+
+.ui-card__title{
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 4px 0 8px 0;
+  /* 4px top, 0 right, 8px bottom, 0 left */
+
+  @media screen and (min-width: 750px){
+    font-size: 12px;
+  }
 }

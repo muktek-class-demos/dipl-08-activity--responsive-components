@@ -1,7 +1,7 @@
-$tablet: 768px;
 
-.demo-0__header{
+.demo-0__header-title{
   font-size: 24px;
+  background: salmon;
 
   @media screen and (min-width: $tablet){
     font-size: 30px;

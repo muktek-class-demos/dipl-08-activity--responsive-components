@@ -304,13 +304,131 @@ img {
   width: 100%;
   display: block; }
 
-.demo-0__header {
-  font-size: 24px; }
+.demo-0__header-title {
+  font-size: 24px;
+  background: salmon; }
   @media screen and (min-width: 768px) {
-    .demo-0__header {
+    .demo-0__header-title {
       font-size: 30px; } }
   @media screen and (min-width: 1024px) {
-    .demo-0__header {
+    .demo-0__header-title {
       font-size: 42px; } }
+
+.demo-01-inner-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px; }
+
+.ui-card {
+  margin: 10px auto;
+  border: 1px solid #333;
+  padding: 10px;
+  /* mobile styles */
+  width: 100%; }
+  @media screen and (min-width: 500px) {
+    .ui-card {
+      /*
+        width 1% less that 25%,
+        with justify-content: space-btw on flex container
+      */
+      width: calc(25% - 10px); } }
+  @media screen and (min-width: 750px) {
+    .ui-card {
+      /*
+        width 1% less that 25%,
+        with justify-content: space-btw on flex container
+      */
+      width: calc(16.666% - 10px); } }
+
+.ui-card__title {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 4px 0 8px 0;
+  /* 4px top, 0 right, 8px bottom, 0 left */ }
+  @media screen and (min-width: 750px) {
+    .ui-card__title {
+      font-size: 12px; } }
+
+/* SETUP */
+.demo-02-inner-container {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.fixed-icon-contact-us {
+  font-size: 45px;
+  background: #00695C;
+  color: #fff;
+  height: 60px;
+  width: 400px;
+  line-height: 60px;
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  left: 10px; }
+  @media screen and (min-width: 768px) {
+    .fixed-icon-contact-us {
+      left: 50%;
+      transform: translate(-50%, 0); } }
+
+/* Your Code here... */
+/* Relevant Styles */
+.nav_fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #911146;
+  width: 100%;
+  color: #fff; }
+  @media screen and (min-width: 750px) {
+    .nav_fixed {
+      /* 'initial' resets the value to original default*/
+      bottom: initial;
+      top: 0; } }
+
+.nav_fixed__desktop-tabs {
+  display: none; }
+  @media screen and (min-width: 750px) {
+    .nav_fixed__desktop-tabs {
+      display: block; } }
+
+.nav_fixed__mobile-icons {
+  display: block; }
+  @media screen and (min-width: 750px) {
+    .nav_fixed__mobile-icons {
+      display: none; } }
+
+/* END */
+/* ...(setup; ignore)... */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue"; }
+
+header {
+  text-align: center;
+  padding-top: 80px;
+  font-weight: 200;
+  color: #aaa;
+  height: 100vh;
+  background-image: url("https://unsplash.it/1200/800?image=302");
+  background-size: cover; }
+
+.nav__icon {
+  font-size: 30px;
+  padding: 10px;
+  display: inline-block; }
+
+.nav__tab {
+  display: inline-block;
+  padding: 20px;
+  border-right: 1px solid #fff;
+  margin-left: -2px; }
+
+/* Your Code here... */
 
 /*# sourceMappingURL=styles.css.map */

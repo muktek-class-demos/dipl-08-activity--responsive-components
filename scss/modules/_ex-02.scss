@@ -1,19 +1,27 @@
 /* SETUP */
-*{box-sizing: border-box;}
-nav{
-  background: #333;
-  max-width: 700px;
-  min-height: 200px;
-  padding-top: 20px;
-}
-
-input, button {
-  outline: 0;
-  border: 0;
-}
-
-.search-bar{
+.demo-02-inner-container {
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.fixed-icon-contact-us{
+  font-size: 45px;
+  background: #00695C;
+  color: #fff;
+
+  height: 60px;
+  width: 400px;
+  line-height: 60px;
+  text-align: center;
+
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+
+  @media screen and (min-width: $tablet){
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 /* Your Code here... */
